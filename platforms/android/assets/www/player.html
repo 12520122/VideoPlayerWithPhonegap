@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>xem video</title>
+        <script language='javascript' src='./cordova.js'></script>
+    </head>
+    <body>
+        <h1>Đây là trang xem video trưc tuyến</h1>
+        <a href="https://www.youtube.com" target='_self'>link đến youtube</a>
+        <script language='javascript'>
+            window.document.addEventListener('deviceready', cordovaReady, false);
+            function cordovaReady(){
+                cordova.InAppBrowser.open("http://10.0.2.2/index.php", "_self", "location=no");
+            };
+        </script>
+    </body>
+</html>

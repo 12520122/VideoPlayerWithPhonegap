@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video player</title>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+          
+</head>
+
+<body>
+
+<script>
+function resetform()
+{
+	$("#formsearch").reset();
+}
+</script>
+<div data-role="page" id="home-page" >
+    <div data-role="header" class="ui-header ui-bar-a" id="header">
+    <a href="index.html" class="glyphicon glyphicon-arrow-left" style="padding:10px"></a>
+         <div class="search" style="float:right;padding:2px 0px 2px 0px"> 
+                <form action="#" method="post" id="formsearch">
+                    <input type="text" name="Search" placeholder="Tìm tập tin video..." id="search" required="">
+                    <input type="reset" value="Hủy"  >
+                </form> 
+            </div>
+            
+            <div class="clear"> </div>
+    </div>
+    
+    <div role="content" class="ui-content">
+      <!--  <div class="grids">
+            <a class="grid" href="#"> 
+                <div class="video-img"><img src="images/g1 copy.png" title="video-name" style="float:left"/></div>
+
+                <div class="video-name"><h3>Consectetur adipisicing elit</h3></div>
+                
+                <div class="glyphicon glyphicon-heart-empty"><h3>Consectetur adipisicing elit</h3></div>
+                
+                
+                <div class="clear"> </div>
+            </a>
+        </div>-->
+    </div>
+    <div data-role="footer" class="ui-footer ui-bar-a">
+        <h2>copyright</h2>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js">
+</script><script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

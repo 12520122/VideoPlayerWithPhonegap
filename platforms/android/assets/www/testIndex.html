@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video player</title>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <script language='javascript' src='./cordova.js'></script>
+    <link rel="stylesheet" type="text/css" href="./tmpSlider/sliderengine/amazingslider-1.css">
+    <link rel="stylesheet" type="text/css" href="./carouselSlider/sliderengine/amazingslider-9.css">
+
+
+      
+</head>
+
+<body>
+ 
+    <div data-role="page" id="home-page" >
+            <div data-role="header" class="ui-header ui-bar-a" id="header" >
+            
+                <div class="dropdown" style="float:right; padding:15px">
+                
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="glyphicon glyphicon-option-vertical"></i> 
+                    </a>
+                    
+                    <ul class="dropdown-menu dropdown-option">
+                        <li><a href="#"> Xem</a>
+                        </li>
+                        <li><a href="#"> Thiết lập</a>
+                        </li>
+                        <li><a href="#"> Trợ giúp</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                 <!--   <a href="#" class="glyphicon glyphicon-option-vertical" style="float:right; padding:15px">
+                </a>-->
+                <a href="#" class="glyphicon glyphicon-repeat" style="float:right; padding:15px"></a>
+                
+                <a href="search.html" class="glyphicon glyphicon-search" style="float:right; padding:15px"></a>
+				<div class="clear"> </div>
+                <!--<a href="index.html" data-role="button" data-icon="info">Button</a>-->
+
+				<input type='button' class='hamburger' value='&#9776;'/>
+				<input type='button' class='cross' value='&#735;'/>
+
+				<div class='menu'>
+
+					<div class='main_menu'>
+						<ul class="tab">
+							<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')">Tất Cả</a></li>
+							<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')">Danh Sách</a></li>
+							<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Thư Mục</a></li>
+							<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">YouTube</a></li>
+						</ul>
+
+						<div id="London" class="tabcontent">
+                            <!-- Insert to your webpage where you want to display the slider -->
+                            <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 98px;">
+
+                                <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+
+                                    <ul class="amazingslider-slides" style="display:none;">
+                                        <li><img src="./tmpSlider/images/Capture.PNG" alt="duyenphan"  title="duyenphan" />
+                                            <video controls preload="none" src="./tmpSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                        <li><img src="./tmpSlider/images/14354917_100169750447339_758175364204299148_n.jpg" alt="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube"  title="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" />
+                                            <video preload="none" src="./tmpSlider/images/L%E1%BB%9Di%20Nguy%E1%BB%81n%20-%20Akira%20Phan%20%5BOFFICIAL%20MV%20HD%5D%20-%20YouTube.MP4" ></video>
+                                        </li>
+                                        <li><img src="./tmpSlider/images/baymax.jpg" alt="yukihira"  title="yukihira" />
+                                            <video preload="none" src="./tmpSlider/images/yukihira.MP4" ></video>
+                                        </li>
+                                        <li><img src="./tmpSlider/images/p.jpg" alt="tonghua"  title="tonghua" />
+                                            <video preload="none" src="./tmpSlider/images/tonghua.mp4" ></video>
+                                        </li>
+                                        <li><img src="./tmpSlider/images/officeTrial.PNG" alt="duyenphan"  title="duyenphan" />
+                                            <video preload="none" src="./tmpSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                        <li><img src="./tmpSlider/images/kiem-nghiem-thung-carton-02.jpg" alt="duyenphan"  title="duyenphan" />
+                                            <video preload="none" src="./tmpSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                        <li><img src="./tmpSlider/images/bienlai%20%281%29.jpg" alt="bienlai (1)"  title="bienlai (1)" />
+                                        </li>
+                                        <li><img src="./tmpSlider/images/20161220_150137.jpg" alt="duyenphan"  title="duyenphan" />
+                                            <video preload="none" src="./tmpSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                        <li><img src="./tmpSlider/images/14322629_100176577113323_7670474867987693985_n.jpg" alt="duyenphan"  title="duyenphan" />
+                                            <video preload="none" src="./tmpSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                    </ul>
+                                    <ul class="amazingslider-thumbnails" style="display:none;">
+                                        <li><img src="./tmpSlider/images/Capture-tn.PNG" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/14354917_100169750447339_758175364204299148_n-tn.jpg" alt="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" title="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" /></li>
+                                        <li><img src="./tmpSlider/images/baymax-tn.jpg" alt="yukihira" title="yukihira" /></li>
+                                        <li><img src="./tmpSlider/images/p-tn.jpg" alt="tonghua" title="tonghua" /></li>
+                                        <li><img src="./tmpSlider/images/officeTrial-tn.PNG" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/kiem-nghiem-thung-carton-02-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/bienlai%20%281%29-tn.jpg" alt="bienlai (1)" title="bienlai (1)" /></li>
+                                        <li><img src="./tmpSlider/images/20161220_150137-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/14322629_100176577113323_7670474867987693985_n-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End of body section HTML codes -->
+                            <!-- Insert to your webpage where you want to display the slider -->
+                            <br>
+                            <h3>YÊU THÍCH</h3>
+                            <div id="amazingslider-wrapper-2" style="display:block;position:relative;max-width:900px;margin:0px auto 98px;">
+
+                                <div id="amazingslider-2" style="display:block;position:relative;margin:0 auto;">
+
+                                    <ul class="amazingslider-slides" style="display:none;">
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                        <li><img src="" alt="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube"  title="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" />
+
+                                        </li>
+                                        <li><img src="" alt="yukihira"  title="yukihira" />
+
+                                        </li>
+                                        <li><img src="" alt="tonghua"  title="tonghua" />
+
+                                        </li>
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                        <li><img src="" alt="bienlai (1)"  title="bienlai (1)" />
+                                        </li>
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                    </ul>
+                                    <ul class="amazingslider-thumbnails" style="display:none;">
+                                        <li><img src="./tmpSlider/images/Capture-tn.PNG" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/14354917_100169750447339_758175364204299148_n-tn.jpg" alt="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" title="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" /></li>
+                                        <li><img src="./tmpSlider/images/baymax-tn.jpg" alt="yukihira" title="yukihira" /></li>
+                                        <li><img src="./tmpSlider/images/p-tn.jpg" alt="tonghua" title="tonghua" /></li>
+                                        <li><img src="./tmpSlider/images/officeTrial-tn.PNG" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/kiem-nghiem-thung-carton-02-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/bienlai%20%281%29-tn.jpg" alt="bienlai (1)" title="bienlai (1)" /></li>
+                                        <li><img src="./tmpSlider/images/20161220_150137-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/14322629_100176577113323_7670474867987693985_n-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End of body section HTML codes -->
+                            <!-- Insert to your webpage where you want to display the slider -->
+                            <br>
+                            <h3>XEM NHỀU</h3>
+                            <div id="amazingslider-wrapper-3" style="display:block;position:relative;max-width:900px;margin:0px auto 98px;">
+
+                                <div id="amazingslider-3" style="display:block;position:relative;margin:0 auto;">
+
+                                    <ul class="amazingslider-slides" style="display:none;">
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                        <li><img src="" alt="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube"  title="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" />
+
+                                        </li>
+                                        <li><img src="" alt="yukihira"  title="yukihira" />
+
+                                        </li>
+                                        <li><img src="" alt="tonghua"  title="tonghua" />
+
+                                        </li>
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                        <li><img src="" alt="bienlai (1)"  title="bienlai (1)" />
+                                        </li>
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                        <li><img src="" alt="duyenphan"  title="duyenphan" />
+
+                                        </li>
+                                    </ul>
+                                    <ul class="amazingslider-thumbnails" style="display:none;">
+                                        <li><img src="./tmpSlider/images/Capture-tn.PNG" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/14354917_100169750447339_758175364204299148_n-tn.jpg" alt="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" title="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" /></li>
+                                        <li><img src="./tmpSlider/images/baymax-tn.jpg" alt="yukihira" title="yukihira" /></li>
+                                        <li><img src="./tmpSlider/images/p-tn.jpg" alt="tonghua" title="tonghua" /></li>
+                                        <li><img src="./tmpSlider/images/officeTrial-tn.PNG" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/kiem-nghiem-thung-carton-02-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/bienlai%20%281%29-tn.jpg" alt="bienlai (1)" title="bienlai (1)" /></li>
+                                        <li><img src="./tmpSlider/images/20161220_150137-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./tmpSlider/images/14322629_100176577113323_7670474867987693985_n-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End of body section HTML codes -->
+                        </div>
+						<div id="Paris" class="tabcontent">
+						<h3>Paris</h3>
+						<p>Paris is the capital of France.</p> 
+						</div>
+
+						<div id="Tokyo" class="tabcontent">
+                            <!-- Insert to your webpage where you want to display the slider -->
+                            <div id="amazingslider-wrapper-9" style="display:block;position:relative;max-width:900px;margin:0px auto 98px;">
+
+                                <div id="amazingslider-9" style="display:block;position:relative;margin:0 auto;">
+
+                                    <ul class="amazingslider-slides" style="display:none;">
+                                        <li><img src="./carouselSlider/images/Capture.PNG" alt="duyenphan"  title="duyenphan" />
+                                            <video controls preload="none" src="./carouselSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                        <li><img src="./carouselSlider/images/14354917_100169750447339_758175364204299148_n.jpg" alt="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube"  title="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" />
+                                            <video preload="none" src="./carouselSlider/images/L%E1%BB%9Di%20Nguy%E1%BB%81n%20-%20Akira%20Phan%20%5BOFFICIAL%20MV%20HD%5D%20-%20YouTube.MP4" ></video>
+                                        </li>
+                                        <li><img src="./carouselSlider/images/baymax.jpg" alt="yukihira"  title="yukihira" />
+                                            <video preload="none" src="./carouselSlider/images/yukihira.MP4" ></video>
+                                        </li>
+                                        <li><img src="./carouselSlider/images/p.jpg" alt="tonghua"  title="tonghua" />
+                                            <video preload="none" src="./carouselSlider/images/tonghua.mp4" ></video>
+                                        </li>
+                                        <li><img src="./carouselSlider/images/officeTrial.PNG" alt="duyenphan"  title="duyenphan" />
+                                            <video preload="none" src="./carouselSliderSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                        <li><img src="./carouselSlider/images/kiem-nghiem-thung-carton-02.jpg" alt="duyenphan"  title="duyenphan" />
+                                            <video preload="none" src="./carouselSliderSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                        <li><img src="./carouselSlider/images/bienlai%20%281%29.jpg" alt="bienlai (1)"  title="bienlai (1)" />
+                                        </li>
+                                        <li><img src="./carouselSlider/images/20161220_150137.jpg" alt="duyenphan"  title="duyenphan" />
+                                            <video preload="none" src="./carouselSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                        <li><img src="./carouselSlider/images/14322629_100176577113323_7670474867987693985_n.jpg" alt="duyenphan"  title="duyenphan" />
+                                            <video preload="none" src="./carouselSlider/images/duyenphan.MP4" ></video>
+                                        </li>
+                                    </ul>
+                                    <ul class="amazingslider-thumbnails" style="display:none;">
+                                        <li><img src="./carouselSlider/images/Capture-tn.PNG" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./carouselSlider/images/14354917_100169750447339_758175364204299148_n-tn.jpg" alt="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" title="Lời Nguyền - Akira Phan [OFFICIAL MV HD] - YouTube" /></li>
+                                        <li><img src="./carouselSlider/images/baymax-tn.jpg" alt="yukihira" title="yukihira" /></li>
+                                        <li><img src="./carouselSlider/images/p-tn.jpg" alt="tonghua" title="tonghua" /></li>
+                                        <li><img src="./carouselSlider/images/officeTrial-tn.PNG" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./carouselSlider/images/kiem-nghiem-thung-carton-02-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./carouselSlider/images/bienlai%20%281%29-tn.jpg" alt="bienlai (1)" title="bienlai (1)" /></li>
+                                        <li><img src="./carouselSlider/images/20161220_150137-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                        <li><img src="./carouselSlider/images/14322629_100176577113323_7670474867987693985_n-tn.jpg" alt="duyenphan" title="duyenphan" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End of body section HTML codes -->
+						</div>
+					</div>
+				</div>
+            </div>
+            
+            <div role="content" class="ui-content">
+                <div>
+                    <object type="text/html" data="https://youtube.com" width="800px" height="600px" style="overflow:auto;border:5px ridge blue">
+                    </object>
+                </div>
+                <script language="javascript">
+                    window.document.addEventListener("deviceready", onDeviceReady, false);
+                    function onDeviceReady() {
+
+                    }
+
+                </script>
+            </div>
+            
+            <div data-role="footer" class="ui-footer ui-bar-a">
+                <h2>copyright</h2>
+            </div>
+        </div>
+
+        <!--<div data-role="page" id="intro">
+            <div data-role="header">
+                <h1>Lời giới thiệu</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <p>
+                    freetuts.net là một website chuyên về lĩnh vực học lập trình 
+                    online miễn phí hoàn toàn, website hoạt động chủ yêu tập trung 
+                    vào các chủ đề như học php, học javascript, học bootstrap, 
+                    học angularjs, học mysql, học codeigniter, học Phalcon
+                </p>
+                <p>
+                    <a href="#init">Trở về</a>
+                </p>
+            </div>
+            <div data-role="footer">
+                <h2>Author: thehalfheart</h2>
+            </div>
+        </div>-->
+
+<!-- JS -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script language='javascript' src='js/custom.js'></script>
+    <script src='./tmpSlider/sliderengine/jquery.js'></script>
+    <script src="./tmpSlider/sliderengine/amazingslider.js"></script>
+    <script src="./tmpSlider/sliderengine/initslider-1.js"></script>
+
+    <script src="./carouselSlider/sliderengine/initslider-9.js"></script>
+</body>
+</html>
